@@ -343,11 +343,11 @@ def create_data(noise_ranges, x_axis_resolution, number_of_trials_per_molecule=1
 
 
 x_axis_res=66171
-scalling = [1,2,4,6,8,10,20,40]
+scalling = np.array([1,2,4,6,8,10,20,40])
 shift = 3e5*scalling
 thermal = 0.025*scalling
 
-for n1 in len(scalling):
+for n1 in range(len(scalling)):
     trial =np.array(create_data([0.05,x_axis_res/1000,shift[n1],thermal[n1]], x_axis_res, notrials, 10 ,0,True,False))
     #output = []
     #output= trial*np.array(create_n_h_pseudo_combs_no_spaceing(trial[0], n1, 0.1, 0.95, len(trial)-1))

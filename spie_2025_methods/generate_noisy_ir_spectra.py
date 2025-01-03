@@ -21,6 +21,9 @@ import jcamp as jc
 
 notrials = 50
 
+# For this paper, master_parameter is always set to zero
+# and is thus neglected in our analysis.
+m = 0
 
 #This cell contains my methods for linear interpolation, gaussian smoothing, (vertical) gaussian noise addition, and R/B shift
 
